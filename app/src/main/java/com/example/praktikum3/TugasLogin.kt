@@ -27,6 +27,10 @@ fun TugasLogin(modifier: Modifier) {
                 fontWeight = FontWeight.Bold
             )
 
+            Text(
+                text = "Ini adalah halaman login"
+            )
+
         }
 
     }
