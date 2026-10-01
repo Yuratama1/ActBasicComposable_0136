@@ -20,7 +20,9 @@ fun TugasLogin(modifier: Modifier) {
         ) {
 
             Text(
-                text = "Login"
+                text = "Login",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold
             )
 
         }
