@@ -6,10 +6,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun TugasLogin(modifier: Modifier = Modifier) {
+fun TugasLogin(modifier: Modifier) {
+
     Box(
         modifier = modifier.fillMaxSize()
     ) {
+
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+        }
 
     }
 }
