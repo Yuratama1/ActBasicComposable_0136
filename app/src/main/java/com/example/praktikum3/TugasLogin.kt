@@ -38,6 +38,17 @@ fun TugasLogin(modifier: Modifier) {
                 text = "Ini adalah halaman login"
             )
 
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.logo_umy
+                ),
+                contentDescription = "Logo Universitas"
+            )
+
         }
 
     }
