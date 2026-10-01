@@ -27,6 +27,10 @@ fun TugasLogin(modifier: Modifier) {
                 fontWeight = FontWeight.Bold
             )
 
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
             Text(
                 text = "Ini adalah halaman login"
             )
