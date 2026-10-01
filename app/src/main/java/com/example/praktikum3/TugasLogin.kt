@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
@@ -14,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -37,72 +39,95 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
 
-        // Isi halaman login
+        // Content
         Column(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(
+                    top = 28.dp,
+                    start = 16.dp,
+                    end = 16.dp
+                ),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+            verticalArrangement = Arrangement.Top
         ) {
 
+            // Judul
             Text(
                 text = "Login",
-                fontSize = 28.sp,
-                fontWeight = FontWeight.Bold
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF0066FF)
+            )
+
+            Spacer(
+                modifier = Modifier.height(4.dp)
+            )
+
+            // Deskripsi
+            Text(
+                text = "Ini adalah halaman login",
+                fontSize = 11.sp,
+                color = Color.White
+            )
+
+            Spacer(
+                modifier = Modifier.height(18.dp)
+            )
+
+            // LOGO UMY
+            Image(
+                painter = painterResource(
+                    id = R.drawable.logo_umy
+                ),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(150.dp)
+            )
+
+            Spacer(
+                modifier = Modifier.height(96.dp)
+            )
+
+            // LABEL NAMA
+            Text(
+                text = "Nama",
+                fontSize = 10.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+
+            Spacer(
+                modifier = Modifier.height(2.dp)
+            )
+
+            // NAMA MAHASISWA
+            Text(
+                text = "Yuratama Fadhilah Nugroho",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF0066FF)
+            )
+
+            // NIM
+            Text(
+                text = "20240140136",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
             )
 
             Spacer(
                 modifier = Modifier.height(12.dp)
             )
 
-            Text(
-                text = "Ini adalah halaman login"
-            )
-
-            Spacer(
-                modifier = Modifier.height(20.dp)
-            )
-
-            Image(
-                painter = painterResource(
-                    id = R.drawable.logo_umy
-                ),
-                contentDescription = "Logo Universitas",
-                modifier = Modifier.size(100.dp)
-            )
-
-            Spacer(
-                modifier = Modifier.height(20.dp)
-            )
-
-            Text(
-                text = "Nama",
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-            Text(
-                text = "Yuratama Fadhilah Nugroho",
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-            Text(
-                text = "20240140136",
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-            Spacer(
-                modifier = Modifier.height(20.dp)
-            )
-
+            // FOTO
             Image(
                 painter = painterResource(
                     id = R.drawable.foto_saya
                 ),
                 contentDescription = "Foto mahasiswa",
                 modifier = Modifier
-                    .size(150.dp)
+                    .size(220.dp)
                     .clip(CircleShape),
                 contentScale = ContentScale.Crop
             )
