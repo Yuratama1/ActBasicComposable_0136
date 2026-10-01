@@ -18,6 +18,10 @@ fun TugasLogin(modifier: Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
+            Text(
+                text = "Login"
+            )
+
         }
 
     }
