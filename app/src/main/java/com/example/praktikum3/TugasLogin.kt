@@ -53,6 +53,35 @@ fun TugasLogin(modifier: Modifier) {
                 modifier = Modifier.size(100.dp)
             )
 
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
+            Text(
+                text = "Nama",
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "Yuratama Fadhilah Nugroho"
+            )
+
+            Text(
+                text = "20240140136"
+            )
+
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.foto_saya
+                ),
+                contentDescription = "Foto mahasiswa",
+                modifier = Modifier.size(150.dp)
+            )
+
         }
 
     }
